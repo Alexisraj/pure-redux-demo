@@ -1,0 +1,31 @@
+.menu {
+  background-color: #1800ff;
+  width: 20%;
+  overflow-x: hidden;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #fff;
+  display: block;
+  padding: 0.625rem;
+}
+.menu a:hover {
+  color: yellow;
+}
+.content {
+  width: 80%;
+  background-color: rgb(239, 245, 234);
+  padding: 0.625rem 0 0 0.625rem;
+}
+
+.body {
+  height: 75vh;
+  display: flex;
+  top: 6.25rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.activeClass {
+  font-weight: bold;
+  color: yellow !important;
+}
