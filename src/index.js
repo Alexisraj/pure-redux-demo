@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import WeatherReducer from "../src/container/reducers";
+import MainComp from "../src/container/index";
+import reportWebVitals from "./reportWebVitals";
+import { createStore } from "redux";
 
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+const store = createStore(WeatherReducer);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <MainComp />
+  </Provider>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
