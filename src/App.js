@@ -9,7 +9,7 @@ function App(props) {
     console.log(`props.weeklydata is null`);
     props.UpdateWeeklyData(stubbedResponse);
   }
-  return props.weeklyData ? (
+  return (
     <div>
       <Header />
       <WeatherContext.Provider value={props}>
@@ -17,8 +17,6 @@ function App(props) {
       </WeatherContext.Provider>
       <Footer />
     </div>
-  ) : (
-    ""
   );
 }
 
