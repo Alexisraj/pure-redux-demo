@@ -17,10 +17,10 @@ function WeekDays() {
 
   return (
     <>
-      <h1>User Name: {props.userName}</h1>
+      {/* <h1>User Name: {props.userName}</h1>
       <a href="#" onClick={() => props.updateUserName("Raj")}>
         UpdateName
-      </a>
+      </a> */}
       {props.selectedData && <h1>{props.selectedData} has been Clicked</h1>}
       <div className="rowC">
         {props?.weeklyData?.weekDays?.map((d) => (
@@ -39,18 +39,10 @@ function WeekDays() {
         onClickAway={() => props.clearSelectedData()}
       >
         <div style={{ margin: "20px" }}>
-          {/* <h1>{props.selectedData} has been Clicked</h1>
-          <div style={{ right: 5, top: "20px", position: "absolute" }}>
-            <a href="#" onClick={() => props.clearSelectedData()}>
-              Close
-            </a>
-          </div>
-          <div className="ContainerDetail">
-            <h2>Thunderstorm expected</h2>
-          </div> */}
           <DetailedSection
             selectedDay={props.selectedData}
             closePopup={props.clearSelectedData}
+            thunderstorm={true}
           />
         </div>
       </Modal>

@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const DetailedSection = (props) => {
+  let videUrl = "./video/Beach.mp4";
+  if (props.thunderstorm) videUrl = "./video/Thunderstorm.mp4";
   return (
     <div>
       <a href="#" onClick={() => props.closePopup()}>
@@ -13,6 +15,18 @@ const DetailedSection = (props) => {
       <span>{props.thunderstorm}</span>
       <span>{props.canBeRain}</span>
       <span>{props.cloudDenses}</span>
+      <div>
+        {props.thunderstorm && (
+          <video
+            width="200px"
+            height="200px"
+            src={videUrl}
+            muted
+            loop
+            autoPlay
+          />
+        )}
+      </div>
     </div>
   );
 };
