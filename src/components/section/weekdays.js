@@ -9,21 +9,19 @@ import "weather-icons/css/weather-icons.css";
 
 function WeekDays() {
   const props = useContext(WeatherContext);
-  console.log("latest props", props);
+
   const getSelectedDay = (id) =>
     props.weeklyData?.weekDays?.find((d) => d.id === id);
 
   const onClickHandler = (selectedDayId) => {
-    console.log("selected Day id:", selectedDayId);
     const data = getSelectedDay(selectedDayId);
-    console.log("selected Day data:", data);
+
     const newData = {
       selectedDay: data.title,
       selectedDayMin: data.tempMin,
       selectedDayMax: data.tempMax,
       selectedDayRangeId: data.rangeId,
     };
-    console.log("test test", newData);
     props.UpdateSelectedData(newData);
   };
   const weatherIcon = {
