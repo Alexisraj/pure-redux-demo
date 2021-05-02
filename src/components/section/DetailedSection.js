@@ -16,6 +16,7 @@ const DetailedSection = (props) => {
       <span>{props.canBeRain}</span>
       <span>{props.cloudDenses}</span>
       <div>
+        <i className={`wi ${props.weatherIcon} display-4`} />
         {props.thunderstorm && (
           <video
             width="200px"
@@ -40,4 +41,5 @@ DetailedSection.prototypes = {
   canBeRain: PropTypes.any,
   cloudDenses: PropTypes.any,
   closePopup: PropTypes.any,
+  weatherIcon: PropTypes.any,
 };

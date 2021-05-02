@@ -21,7 +21,7 @@ const WeatherReducer = (state = initialState, action) => {
         selectedDay: action.selectedData.selectedDay,
         selectedDayMin: action.selectedData.selectedDayMin,
         selectedDayMax: action.selectedData.selectedDayMax,
-        selectedDayRangeId: action.selectedData.rangeId,
+        selectedDayRangeId: action.selectedData.selectedDayRangeId,
         showPopup: !!action.selectedData,
       };
     case "CLEAR_SELECTED_DATA":

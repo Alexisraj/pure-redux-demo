@@ -77,6 +77,7 @@ function WeekDays() {
           />
         ))}
       </div>
+
       <Modal
         visible={props.showPopup}
         width="600px"
@@ -90,6 +91,7 @@ function WeekDays() {
             selectedDayMax={props.selectedDayMax}
             selectedDayMin={props.selectedDayMin}
             closePopup={props.clearSelectedData}
+            weatherIcon={get_WeatherIcon(weatherIcon, props.selectedDayRangeId)}
             thunderstorm={true}
           />
         </div>
