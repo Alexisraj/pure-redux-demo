@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import "./weather.css";
 import WeatherContext from "../Context/WeatherContext";
 import { useContext } from "react";
+import "weather-icons/css/weather-icons.css";
 
 function Day(props) {
   const minVal = props.min || "20";
@@ -12,16 +13,14 @@ function Day(props) {
       <div className="container">
         <h4 style={{ textAlign: "center" }}>{props.title.substring(0, 3)}</h4>
         <hr />
-        <div>dsfg</div>
+        <div>
+          <i className={`wi ${props.weatherIcon} display-4`} />
+        </div>
         {data.selectedData && <span>{data.selectedData}</span>}
         <hr />
-        <div style={{ width: "20px" }}>
-          <div>
-            <span>{`${maxVal}\u00b0`}</span>
-          </div>
-          <div style={{ right: 0 }}>
-            <span>{`${minVal}\u00b0`}</span>
-          </div>
+        <div>
+          <p>{`${maxVal}\u00b0`}</p>
+          <p>{`${minVal}\u00b0`}</p>
         </div>
       </div>
     </div>

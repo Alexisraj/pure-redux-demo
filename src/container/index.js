@@ -5,8 +5,11 @@ import * as actions from "./actions";
 const mapStateToProps = (state) => {
   return {
     weeklyData: state.weeklyData,
-    selectedData: state.selectedData,
     showPopup: state.showPopup,
+    selectedDay: state.selectedDay,
+    selectedDayMin: state.selectedDayMin,
+    selectedDayMax: state.selectedDayMax,
+    selectedDayRangeId: state.selectedDayRangeId,
     userName: state.user,
   };
 };

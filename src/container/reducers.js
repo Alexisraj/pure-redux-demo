@@ -1,6 +1,9 @@
 const initialState = {
   weeklyData: false,
-  selectedData: false,
+  selectedDay: false,
+  selectedDayMin: false,
+  selectedDayMax: false,
+  selectedDayRangeId: false,
   showPopup: false,
   user: "Alex",
 };
@@ -15,13 +18,20 @@ const WeatherReducer = (state = initialState, action) => {
     case "UPDATE_PARTICULAR_DATE":
       return {
         ...state,
-        selectedData: action.selectedData,
+        selectedDay: action.selectedData.selectedDay,
+        selectedDayMin: action.selectedData.selectedDayMin,
+        selectedDayMax: action.selectedData.selectedDayMax,
+        selectedDayRangeId: action.selectedData.rangeId,
         showPopup: !!action.selectedData,
       };
     case "CLEAR_SELECTED_DATA":
       return {
         ...state,
         selectedData: false,
+        selectedDay: false,
+        selectedDayMin: false,
+        selectedDayMax: false,
+        selectedDayRangeId: false,
         showPopup: false,
       };
     case "UPDATE_USER_NAME":

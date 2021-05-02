@@ -9,8 +9,8 @@ const DetailedSection = (props) => {
       <a href="#" onClick={() => props.closePopup()}>
         Close
       </a>
-      <span>{props.min}</span>
-      <span>{props.max}</span>
+      <span>{props.selectedDayMin}</span>
+      <span>{props.selectedDayMax}</span>
       <span>{props.selectedDay}</span>
       <span>{props.thunderstorm}</span>
       <span>{props.canBeRain}</span>
@@ -33,8 +33,8 @@ const DetailedSection = (props) => {
 
 export default DetailedSection;
 DetailedSection.prototypes = {
-  min: PropTypes.any,
-  max: PropTypes.any,
+  selectedDayMax: PropTypes.any,
+  selectedDayMin: PropTypes.any,
   selectedDay: PropTypes.any,
   thunderstorm: PropTypes.any,
   canBeRain: PropTypes.any,
