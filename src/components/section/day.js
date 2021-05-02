@@ -18,10 +18,9 @@ function Day(props) {
         </div>
         {data.selectedData && <span>{data.selectedData}</span>}
         <hr />
-        <div>
-          <p>{`${maxVal}\u00b0`}</p>
-          <p>{`${minVal}\u00b0`}</p>
-        </div>
+        <h4>
+          <p>{`${maxVal}\u00b0`}</p> <p>{`${minVal}\u00b0`}</p>
+        </h4>
       </div>
     </div>
   );
