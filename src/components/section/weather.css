@@ -9,10 +9,21 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container {
-  padding: 2px 16px;
-}
 .rowC {
   display: flex;
   flex-direction: row;
+}
+
+.ContainerDetail {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  position: sticky;
+}
+.ContainerDetail > h2 {
+  color: #ffffff;
+  margin-top: -100px;
 }

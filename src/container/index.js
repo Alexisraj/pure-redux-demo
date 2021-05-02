@@ -7,6 +7,7 @@ const mapStateToProps = (state) => {
     weeklyData: state.weeklyData,
     selectedData: state.selectedData,
     showPopup: state.showPopup,
+    userName: state.user,
   };
 };
 
@@ -15,6 +16,8 @@ const mapDispachToProps = (dispatch) => {
     UpdateWeeklyData: (data) => dispatch(actions.UpdateWeeklyData(data)),
     UpdateSelectedData: (data) => dispatch(actions.UpdateSelectedData(data)),
     clearSelectedData: () => dispatch(actions.clearSelectedData()),
+    updateUserName: (name) =>
+      dispatch({ type: "UPDATE_USER_NAME", name: name }),
   };
 };
 const MainComp = connect(mapStateToProps, mapDispachToProps)(App);

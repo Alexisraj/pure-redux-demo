@@ -2,6 +2,7 @@ const initialState = {
   weeklyData: false,
   selectedData: false,
   showPopup: false,
+  user: "Alex",
 };
 
 const WeatherReducer = (state = initialState, action) => {
@@ -22,6 +23,11 @@ const WeatherReducer = (state = initialState, action) => {
         ...state,
         selectedData: false,
         showPopup: false,
+      };
+    case "UPDATE_USER_NAME":
+      return {
+        ...state,
+        user: action.name,
       };
     default:
       return initialState;
