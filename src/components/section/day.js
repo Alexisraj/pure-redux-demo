@@ -13,13 +13,20 @@ function Day(props) {
       <div className="container">
         <h4 style={{ textAlign: "center" }}>{props.title.substring(0, 3)}</h4>
         <hr />
-        <div>
+        <div className="iconStyle">
           <i className={`wi ${props.weatherIcon} display-4`} />
         </div>
+
+        <p className="smallDesc">{props.desc}</p>
         <hr />
-        <h4>
-          <p>{`${maxVal}\u00b0`}</p> <p>{`${minVal}\u00b0`}</p>
-        </h4>
+        <div style={{ display: "flex", height: "50px" }}>
+          <p
+            style={{ left: "10px", position: "absolute" }}
+          >{`${maxVal}\u00b0`}</p>{" "}
+          <p
+            style={{ right: "10px", position: "absolute" }}
+          >{`${minVal}\u00b0`}</p>
+        </div>
       </div>
     </div>
   );
@@ -31,5 +38,6 @@ Day.propTypes = {
   title: PropTypes.any,
   max: PropTypes.any,
   min: PropTypes.any,
+  desc: PropTypes.any,
   onClick: PropTypes.any,
 };

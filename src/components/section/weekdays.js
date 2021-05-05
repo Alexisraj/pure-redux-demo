@@ -72,6 +72,7 @@ function WeekDays() {
             title={d.title}
             min={d.tempMin}
             max={d.tempMax}
+            desc={d.desc}
             weatherIcon={get_WeatherIcon(weatherIcon, d.rangeId)}
             onClick={() => onClickHandler(d.id)}
           />

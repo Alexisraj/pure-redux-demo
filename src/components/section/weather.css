@@ -31,6 +31,19 @@
   margin-top: 1.2rem;
 }
 
+.iconStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smallDesc {
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container input,
 .container ::-webkit-input-placeholder {
   color: white !important;
