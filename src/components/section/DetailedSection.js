@@ -6,8 +6,8 @@ const DetailedSection = (props) => {
   if (props.thunderstorm) videUrl = "./video/Thunderstorm.mp4";
   return (
     <div>
-      <a href="#" onClick={() => props.closePopup()}>
-        Close
+      <a className="close" href="#" onClick={() => props.closePopup()}>
+        <img src="./images/close.png" alt="close" />
       </a>
       <span>{props.selectedDayMin}</span>
       <span>{props.selectedDayMax}</span>

@@ -41,3 +41,11 @@
   border: none;
   border-bottom: 2px solid tomato;
 }
+
+.close > img {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  right: 20px;
+  top: 20px;
+}

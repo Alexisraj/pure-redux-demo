@@ -16,7 +16,6 @@ function Day(props) {
         <div>
           <i className={`wi ${props.weatherIcon} display-4`} />
         </div>
-        {data.selectedData && <span>{data.selectedData}</span>}
         <hr />
         <h4>
           <p>{`${maxVal}\u00b0`}</p> <p>{`${minVal}\u00b0`}</p>
