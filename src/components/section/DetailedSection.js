@@ -35,23 +35,21 @@ const DetailedSection = (props) => {
                 </td>
               </tr>
               <tr>
-                <td className="tg-0lax">Rain</td>
-                <td className="tg-0lax">
-                  <span>{props.canBeRain}</span>
+                <td className="tg-0lax" colSpan="2">
+                  Weather
                 </td>
-                <td className="tg-0lax">Thunderstorm</td>
-                <td className="tg-0lax">
-                  <span>{props.thunderstorm}</span>
+                <td className="tg-0lax" colSpan="2">
+                  <span>{props.selectedWeatherType}</span>
                 </td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td className="tg-0lax">Cloud</td>
                 <td className="tg-0lax">
                   <span>{props.cloudDenses}</span>
                 </td>
                 <td className="tg-0lax">Fog</td>
                 <td className="tg-0lax">No</td>
-              </tr>
+              </tr> */}
             </tbody>
           </table>
         </div>

@@ -21,6 +21,7 @@ function WeekDays() {
       selectedDayMin: data.tempMin,
       selectedDayMax: data.tempMax,
       selectedDayRangeId: data.rangeId,
+      selectedWeatherType: data.desc,
     };
     props.UpdateSelectedData(newData);
   };
@@ -93,6 +94,7 @@ function WeekDays() {
             selectedDayMin={props.selectedDayMin}
             closePopup={props.clearSelectedData}
             weatherIcon={get_WeatherIcon(weatherIcon, props.selectedDayRangeId)}
+            selectedWeatherType={props.selectedWeatherType}
             thunderstorm={true}
           />
         </div>
