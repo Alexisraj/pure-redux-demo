@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 import "./weather.css";
-import WeatherContext from "../Context/WeatherContext";
-import { useContext } from "react";
+// import WeatherContext from "../Context/WeatherContext";
+// import { useContext } from "react";
 import "weather-icons/css/weather-icons.css";
 
 function Day(props) {
   const minVal = props.min || "20";
   const maxVal = props.max || "30";
-  const data = useContext(WeatherContext);
+  // const data = useContext(WeatherContext);
   return (
     <div className="card" onClick={props.onClick}>
       <div className="container">

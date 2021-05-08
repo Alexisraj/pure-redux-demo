@@ -3,8 +3,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const DetailedSection = (props) => {
-  // let videUrl = "./video/Beach.mp4";
-  // if (props.thunderstorm) videUrl = "./video/Thunderstorm.mp4";
   return (
     <div>
       <a className="close" href="#" onClick={() => props.closePopup()}>
@@ -13,46 +11,46 @@ const DetailedSection = (props) => {
       <div>
         <h4 className="Header">The detailed Report for {props.selectedDay}</h4>
         <div className="tableSection">
-          <table class="tg">
+          <table className="tg">
             <thead>
               <tr>
-                <th class="tg-2fdn">Day</th>
-                <th class="tg-0lax">
+                <th className="tg-2fdn">Day</th>
+                <th className="tg-0lax">
                   <span>{props.selectedDay}</span>
                 </th>
-                <th class="tg-0lax" colspan="2">
+                <th className="tg-0lax" colSpan="2">
                   <i className={`wi ${props.weatherIcon} display-4`} />
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="tg-0lax">Max</td>
-                <td class="tg-0lax">
+                <td className="tg-0lax">Max</td>
+                <td className="tg-0lax">
                   <span>{props.selectedDayMax}&deg;</span>
                 </td>
-                <td class="tg-0lax">Min</td>
-                <td class="tg-0lax">
+                <td className="tg-0lax">Min</td>
+                <td className="tg-0lax">
                   <span>{props.selectedDayMin}&deg;</span>
                 </td>
               </tr>
               <tr>
-                <td class="tg-0lax">Rain</td>
-                <td class="tg-0lax">
+                <td className="tg-0lax">Rain</td>
+                <td className="tg-0lax">
                   <span>{props.canBeRain}</span>
                 </td>
-                <td class="tg-0lax">Thunderstorm</td>
-                <td class="tg-0lax">
+                <td className="tg-0lax">Thunderstorm</td>
+                <td className="tg-0lax">
                   <span>{props.thunderstorm}</span>
                 </td>
               </tr>
               <tr>
-                <td class="tg-0lax">Cloud</td>
-                <td class="tg-0lax">
+                <td className="tg-0lax">Cloud</td>
+                <td className="tg-0lax">
                   <span>{props.cloudDenses}</span>
                 </td>
-                <td class="tg-0lax">Fog</td>
-                <td class="tg-0lax">No</td>
+                <td className="tg-0lax">Fog</td>
+                <td className="tg-0lax">No</td>
               </tr>
             </tbody>
           </table>
