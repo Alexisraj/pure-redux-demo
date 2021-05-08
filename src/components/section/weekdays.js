@@ -22,6 +22,7 @@ function WeekDays() {
       selectedDayMax: data.tempMax,
       selectedDayRangeId: data.rangeId,
       selectedWeatherType: data.desc,
+      selectedWeatherIcon: get_WeatherIcon(weatherIcon, data.rangeId),
     };
     props.UpdateSelectedData(newData);
   };
@@ -88,15 +89,7 @@ function WeekDays() {
         onClickAway={() => props.clearSelectedData()}
       >
         <div className="detailsPop">
-          <DetailedSection
-            selectedDay={props.selectedDay}
-            selectedDayMax={props.selectedDayMax}
-            selectedDayMin={props.selectedDayMin}
-            closePopup={props.clearSelectedData}
-            weatherIcon={get_WeatherIcon(weatherIcon, props.selectedDayRangeId)}
-            selectedWeatherType={props.selectedWeatherType}
-            thunderstorm={true}
-          />
+          <DetailedSection />
         </div>
       </Modal>
     </>

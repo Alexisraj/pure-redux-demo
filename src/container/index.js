@@ -11,6 +11,7 @@ const mapStateToProps = (state) => {
     selectedDayMax: state.selectedDayMax,
     selectedDayRangeId: state.selectedDayRangeId,
     selectedWeatherType: state.selectedWeatherType,
+    selectedWeatherIcon: state.selectedWeatherIcon,
     userName: state.user,
   };
 };
