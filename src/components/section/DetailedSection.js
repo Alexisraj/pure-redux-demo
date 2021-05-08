@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useContext } from "react";
+import WeatherContext from "../Context/WeatherContext";
 
-const DetailedSection = (props) => {
+const DetailedSection = () => {
+  const props = useContext(WeatherContext);
   return (
     <div>
-      <a className="close" href="#" onClick={() => props.closePopup()}>
+      <a className="close" href="#" onClick={() => props.clearSelectedData()}>
         <img src="./images/close.png" alt="close" />
       </a>
       <div>
@@ -19,7 +20,7 @@ const DetailedSection = (props) => {
                   <span>{props.selectedDay}</span>
                 </th>
                 <th className="tg-0lax" colSpan="2">
-                  <i className={`wi ${props.weatherIcon} display-4`} />
+                  <i className={`wi ${props.selectedWeatherIcon} display-4`} />
                 </th>
               </tr>
             </thead>
@@ -59,13 +60,3 @@ const DetailedSection = (props) => {
 };
 
 export default DetailedSection;
-DetailedSection.prototypes = {
-  selectedDayMax: PropTypes.any,
-  selectedDayMin: PropTypes.any,
-  selectedDay: PropTypes.any,
-  thunderstorm: PropTypes.any,
-  canBeRain: PropTypes.any,
-  cloudDenses: PropTypes.any,
-  closePopup: PropTypes.any,
-  weatherIcon: PropTypes.any,
-};

@@ -6,17 +6,17 @@
 .menu a {
   text-decoration: none;
   font-size: 1.25rem;
-  color: #fff;
+  color: rgb(8, 8, 8);
   display: block;
   padding: 0.625rem;
 }
 .menu a:hover {
-  color: yellow;
+  color: tomato;
 }
 .content {
   width: 80%;
   background: linear-gradient(skyblue, pink);
-  padding: 0.625rem 0 0 0.625rem;
+  padding: 10px;
 }
 
 .body {
@@ -27,5 +27,5 @@
 }
 .activeClass {
   font-weight: bold;
-  color: rgb(119, 119, 92) !important;
+  color: rgb(252, 252, 248) !important;
 }
