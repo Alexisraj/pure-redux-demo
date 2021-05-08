@@ -1,5 +1,5 @@
 .menu {
-  background-color: #1800ff;
+  background: linear-gradient(skyblue, pink);
   width: 20%;
   overflow-x: hidden;
 }
@@ -15,7 +15,7 @@
 }
 .content {
   width: 80%;
-  background-color: rgb(239, 245, 234);
+  background: linear-gradient(skyblue, pink);
   padding: 0.625rem 0 0 0.625rem;
 }
 
@@ -27,5 +27,5 @@
 }
 .activeClass {
   font-weight: bold;
-  color: yellow !important;
+  color: rgb(119, 119, 92) !important;
 }

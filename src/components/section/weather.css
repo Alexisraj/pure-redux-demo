@@ -112,3 +112,8 @@
   text-align: center;
   vertical-align: middle;
 }
+.detailsPop {
+  background: linear-gradient(skyblue, pink);
+  width: 100%;
+  height: 100%;
+}

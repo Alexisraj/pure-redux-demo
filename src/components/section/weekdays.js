@@ -87,7 +87,7 @@ function WeekDays() {
         effect="fadeInUp"
         onClickAway={() => props.clearSelectedData()}
       >
-        <div style={{ margin: "20px" }}>
+        <div className="detailsPop">
           <DetailedSection
             selectedDay={props.selectedDay}
             selectedDayMax={props.selectedDayMax}

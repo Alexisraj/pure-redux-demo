@@ -1,12 +1,12 @@
 .logo {
   position: absolute;
   height: 100px;
-  background-color: black;
+  background: linear-gradient(rgb(156, 156, 184), rgb(216, 212, 212));
   justify-content: left;
 }
 .headerText {
-  background-color: black;
-  color: yellow;
+  background: linear-gradient(rgb(156, 156, 184), rgb(216, 212, 212));
+  color: rgb(15, 15, 14);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100px;
   width: 100%;
@@ -15,9 +15,9 @@
   justify-content: center;
 }
 .time {
-  background-color: black;
+  background: linear-gradient(rgb(156, 156, 184), rgb(216, 212, 212));
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: azure;
+  color: black;
   right: 0;
   font-size: 1rem;
   display: flex;
